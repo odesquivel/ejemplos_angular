@@ -1,0 +1,9 @@
+<h3>Agregar</h3>
+<hr>
+<form (ngSubmit)="agregar()">
+    <input type="text" placeholder="Agregar Personaje " name="nombre" [(ngModel)]="personaje.nombre" />
+    <!--[(ngModel)] Este es el concept the two way databinding emite como recibe eventos-->
+
+    <input type="number" placeholder="Poder" name="poder" [(ngModel)]="personaje.poder" />
+    <button type="submit">Agregar</button>
+</form>
